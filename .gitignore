@@ -1,0 +1,36 @@
+__pycache__/
+.pytest_cache/
+.venv/
+venv/
+datasets/
+test_inputs/
+.ipynb_checkpoints/
+
+# Local credentials and agent configuration.
+.env
+.env.*
+!.env.example
+.aws/
+.codex/
+.agents/
+*.pem
+*.key
+
+# Publish the working model and reports; keep new runs and previews local.
+/artifacts/*
+!/artifacts/best_model.pt
+!/artifacts/metrics.json
+!/artifacts/confusion_matrix.png
+!/artifacts/learning_curves.png
+!/artifacts/baseline/
+/artifacts/baseline/*
+!/artifacts/baseline/best_model.pt
+!/artifacts/baseline/metrics.json
+!/artifacts/baseline/confusion_matrix.png
+!/artifacts/baseline/learning_curves.png
+!/artifacts/workspace_evaluation/
+/artifacts/workspace_evaluation/*
+!/artifacts/workspace_evaluation/results.json
+!/artifacts/number_evaluation/
+/artifacts/number_evaluation/*
+!/artifacts/number_evaluation/results.json

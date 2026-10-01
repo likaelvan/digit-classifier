@@ -1,0 +1,43 @@
+{
+  "description": "Workspace regression examples; labels assigned by visual inspection. Never used for training or checkpoint selection.",
+  "checkpoint": "artifacts/best_model.pt",
+  "manifest": "test_inputs/labels.json",
+  "image_size": 28,
+  "correct": 4,
+  "total": 4,
+  "accuracy": 1.0,
+  "results": [
+    {
+      "image": "digit_9_graphic.png",
+      "expected": 9,
+      "predicted": 9,
+      "mode": "digit",
+      "correct": true,
+      "softmax_score_uncalibrated": 0.7625053524971008
+    },
+    {
+      "image": "digit_9_photo.jpg",
+      "expected": 9,
+      "predicted": 9,
+      "mode": "digit",
+      "correct": true,
+      "softmax_score_uncalibrated": 0.9999979734420776
+    },
+    {
+      "image": "digit_6_handwritten.jpg",
+      "expected": 6,
+      "predicted": 6,
+      "mode": "digit",
+      "correct": true,
+      "softmax_score_uncalibrated": 0.9992313385009766
+    },
+    {
+      "image": "digit_1_badge.jpg",
+      "expected": 1,
+      "predicted": 1,
+      "mode": "digit",
+      "correct": true,
+      "softmax_score_uncalibrated": 0.9971665740013123
+    }
+  ]
+}

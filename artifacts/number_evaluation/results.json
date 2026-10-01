@@ -1,0 +1,91 @@
+{
+  "description": "Number regression examples: generated OpenCV glyphs and a row assembled from held-out MNIST digits. Not a benchmark of real multi-digit handwriting. No retraining or checkpoint selection uses these images.",
+  "checkpoint": "artifacts/best_model.pt",
+  "manifest": "test_inputs/numbers/labels.json",
+  "image_size": 28,
+  "correct": 6,
+  "total": 6,
+  "accuracy": 1.0,
+  "results": [
+    {
+      "image": "number_123.png",
+      "expected": "123",
+      "predicted": "123",
+      "mode": "number",
+      "correct": true,
+      "digit_scores_uncalibrated": [
+        0.9978735446929932,
+        1.0,
+        0.9999911785125732
+      ]
+    },
+    {
+      "image": "number_007.png",
+      "expected": "007",
+      "predicted": "007",
+      "mode": "number",
+      "correct": true,
+      "digit_scores_uncalibrated": [
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "image": "number_908.png",
+      "expected": "908",
+      "predicted": "908",
+      "mode": "number",
+      "correct": true,
+      "digit_scores_uncalibrated": [
+        0.9999980926513672,
+        1.0,
+        0.9999816417694092
+      ]
+    },
+    {
+      "image": "number_1234567890.png",
+      "expected": "1234567890",
+      "predicted": "1234567890",
+      "mode": "number",
+      "correct": true,
+      "digit_scores_uncalibrated": [
+        0.9978735446929932,
+        1.0,
+        0.9999911785125732,
+        0.9999991655349731,
+        1.0,
+        0.9995312690734863,
+        1.0,
+        0.9999816417694092,
+        0.9999980926513672,
+        1.0
+      ]
+    },
+    {
+      "image": "number_123_inverted.png",
+      "expected": "123",
+      "predicted": "123",
+      "mode": "number",
+      "correct": true,
+      "digit_scores_uncalibrated": [
+        0.9978735446929932,
+        1.0,
+        0.9999911785125732
+      ]
+    },
+    {
+      "image": "number_2468_handwritten.png",
+      "expected": "2468",
+      "predicted": "2468",
+      "mode": "number",
+      "correct": true,
+      "digit_scores_uncalibrated": [
+        0.9999933242797852,
+        0.9999996423721313,
+        0.9998931884765625,
+        0.9999942779541016
+      ]
+    }
+  ]
+}
